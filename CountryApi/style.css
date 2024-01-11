@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #8080802b;
+}
+
+.dark {
+    background-color: black;
+    color: #fff;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.world-header {
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.world-input {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding: 0 50px;
+}
+
+.input-left i {
+    color: gray;
+    position: absolute;
+    top: 15px;
+    left: 65px;
+}
+
+.input-left input {
+    padding: 15px 0 15px 50px;
+    width: 200%;
+    border: none;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.input-right .filterBtn{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.input-right .filterBtn h3{
+    font-weight: 400;
+}
+
+.input-right ul{
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.input-right ul li{
+    background-color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+.input-right ul li:hover{
+    background-color: rgb(151 151 151 / 61%);
+}
+
+.world-flags {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    padding: 0 50px;
+    margin-bottom: 50px;
+}
+
+.world {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.world-name {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.world-img{
+    height: 220px;
+}
+
+.world-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.world-info-name {
+    padding: 20px 20px 40px 20px;
+}
+
+.world-info ul {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.world-info ul li span {
+    font-weight: 300;
+}
